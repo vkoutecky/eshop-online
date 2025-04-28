@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Generátor popisu produktu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Generátor popisu produktu</h1>
+
+<form id="productForm">
+  <label for="nazev">Název:</label>
+  <input type="text" id="nazev" name="nazev" required>
+
+  <label for="zvyraznenyNazev">Zvýrazněný název:</label>
+  <input type="text" id="zvyraznenyNazev" name="zvyraznenyNazev" required>
+
+  <label for="rozmery">Rozměry:</label>
+  <input type="text" id="rozmery" name="rozmery" required>
+
+  <label for="obrazek">Obrázek:</label>
+  <input type="text" id="obrazek" name="obrazek" required>
+
+  <div class="buttons">
+    <button type="button" onclick="generateHTML()">Generovat kód</button>
+    <button type="button" onclick="resetForm()">Reset</button>
+    <button type="button" onclick="copyToClipboard()">Copy</button>
+  </div>
+</form>
+
+<h2>Výsledný HTML kód:</h2>
+<textarea id="vystup" spellcheck="false"></textarea>
+
+<!-- Notifikace pro zkopírování -->
+<div id="copyNotification">Zkopírováno!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
