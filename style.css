@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 400px;
+  margin-top: 20px;
+  font-family: monospace;
+  background-color: #f9f9f9;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Notifikace */
+#copyNotification {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  font-size: 16px;
+  z-index: 1000;
+  animation: fadeOut 2s forwards;
+}
+
+/* Animační efekt - zmizení */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
