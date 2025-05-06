@@ -7,20 +7,26 @@ function generateHTML() {
   const html = `
 <div>
 <!-- SEKCE - popis produktu -->
-<div class="s_rightImg product_page_custom">
-  <div class="rightImg_text">
-    <h2 class="h2">${nazev}</h2>
-    <hr />
-    <p>Přívěsek na klíče nebo zavazadlo s logem letecké společnosti <b>${zvyraznenyNazev}</b>.</p>
-    <p>Klíčenka je precizně vyrobena s důrazem na detaily a vydrží i náročné používání.</p>
-    <h2 class="h2">Parametry</h2>
-    <hr />
-    <p><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i><b>Rozměry:</b> ${rozmery}</p>
-  </div>
-  <div class="rightImg_img"><img src="/user/shop/orig/${obrazek}.jpg" alt="" /></div>
+<div class="s_rightImg margin_bottom product_page_custom">
+<div class="rightImg_text">
+<h2 class="h2">${nazev}</h2>
+<hr />
+<p>Přívěsek na klíče nebo zavazadlo s logem letecké společnosti <b>${zvyraznenyNazev}</b>.</p>
+<p>Klíčenka je precizně vyrobena s důrazem na detaily a vydrží i náročné používání.</p>
 </div>
 </div>
 <!-- SEKCE KONEC - popis produktu -->
+<!-- SEKCE - parametry -->
+<div class="s_rightImg margin_bottom product_page_custom">
+<div class="rightImg_text">
+<h2 class="h2">Parametry</h2>
+<hr />
+<p><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i>Rozměry: <strong>${rozmery}</strong>.</p>
+</div>
+<div class="rightImg_img"><img src="/user/shop/orig/${obrazek}.jpg" alt="" /></div>
+</div>
+<!-- SEKCE KONEC - parametry -->
+</div>
   `.trim();
 
   document.getElementById('vystup').value = html;
