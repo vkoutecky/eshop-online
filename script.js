@@ -23,7 +23,6 @@ function generateHTML() {
 <hr />
 <p><i class="fa-solid fa-up-right-and-down-left-from-center fa-2x"></i>Rozměry: <strong>${rozmery}</strong>.</p>
 </div>
-<div class="rightImg_img"><img src="/user/shop/orig/${obrazek}.jpg" alt="" /></div>
 </div>
 <!-- SEKCE KONEC - parametry -->
 </div>
