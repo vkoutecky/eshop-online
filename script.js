@@ -7,7 +7,7 @@ function generateHTML() {
   const html = `
 <div>
 <!-- SEKCE - popis produktu -->
-<div class="s_rightImg margin_bottom product_page_custom">
+<div class="s_rightImgPrivesky margin_bottom product_page_custom">
 <div class="rightImg_text">
 <h2 class="h2">${nazev}</h2>
 <hr />
@@ -17,7 +17,7 @@ function generateHTML() {
 </div>
 <!-- SEKCE KONEC - popis produktu -->
 <!-- SEKCE - parametry -->
-<div class="s_rightImg margin_bottom product_page_custom">
+<div class="s_rightImgPrivesky margin_bottom product_page_custom">
 <div class="rightImg_text">
 <h2 class="h2">Parametry</h2>
 <hr />
